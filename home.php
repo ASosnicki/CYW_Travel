@@ -8,7 +8,7 @@
 </head>
 <body>
   <!-- nav -->
-  <nav class="navbar navbar-default">
+  <!-- <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.html">FaceClone</a>
@@ -19,70 +19,91 @@
         <li><a href="#">Logout</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
   <!-- ./nav -->
+  <?php include “header.php” ?>
+
+<main class=”container”>
+  <!-- page content here -->
+</main>
+
+<?php include “footer.php” ?>
 
   <!-- main -->
   <main class="container">
     <div class="row">
       <div class="col-md-3">
-        <!-- edit profile -->
+        <!-- profile brief -->
         <div class="panel panel-default">
           <div class="panel-body">
-            <h4>Edit profile</h4>
-            <form method="post" action="">
-              <div class="form-group">
-                <input class="form-control" type="text" name="status" placeholder="Status" value="">
-              </div>
-
-              <div class="form-group">
-                <input class="form-control" type="text" name="location" placeholder="Location" value="">
-              </div>
-
-              <div class="form-group">
-                <input class="btn btn-primary" type="submit" name="update_profile" value="Save">
-              </div>
-            </form>
+            <h4></h4>
+            <p></p>
           </div>
         </div>
-        <!-- ./edit profile -->
+        <!-- ./profile brief -->
+
+        <!-- friend requests -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>friend requests</h4>
+            <ul>
+              <li>
+                <a href="#">johndoe</a> 
+                <a class="text-success" href="#">[accept]</a> 
+                <a class="text-danger" href="#">[decline]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./friend requests -->
       </div>
       <div class="col-md-6">
-        <!-- user profile -->
-        <div class="media">
-          <div class="media-left">
-            <img src="img/heli.jpg" class="media-object" style="width: 128px; height: 128px;">
+        <!-- post form -->
+        <form method="post" action="">
+          <div class="input-group">
+            <input class="form-control" type="text" name="content" placeholder="Make a post...">
+            <span class="input-group-btn">
+              <button class="btn btn-success" type="submit" name="post">Post</button>
+            </span>
           </div>
-          <div class="media-body">
-            <h2 class="media-heading">ASosnicki</h2>
-            <p>Status: Test, Location: Sedona</p>
-          </div>
-        </div>
-        <!-- user profile -->
+        </form><hr>
+        <!-- ./post form -->
 
-        <hr>
-
-        <!-- timeline -->
+        <!-- feed -->
         <div>
           <!-- post -->
           <div class="panel panel-default">
             <div class="panel-body">
-              <p>This is my first FaceClone post.</p>
+              <p>Hello people! This is my first FaceClone post. Hurray!!!</p>
             </div>
             <div class="panel-footer">
               <span></span> 
-              <span class="pull-right"><a class="text-danger" href="#">[delete]</a></span>
+              <span class="pull-right"><a class="text-danger" href="#"></a></span>
             </div>
           </div>
           <!-- ./post -->
         </div>
-        <!-- ./timeline -->
+        <!-- ./feed -->
       </div>
       <div class="col-md-3">
+      <!-- add friend -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>add friend</h4>
+            <ul>
+              <li>
+                <a href="#"></a> 
+                <a href="#">[add]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./add friend -->
+
         <!-- friends -->
         <div class="panel panel-default">
           <div class="panel-body">
-            <h4>Friends</h4>
+            <h4>friends</h4>
             <ul>
               <li>
                 <a href="#"></a> 
@@ -98,11 +119,11 @@
   <!-- ./main -->
 
   <!-- footer -->
-  <footer class="container text-center">
+ <!--  <footer class="container text-center">
     <ul class="nav nav-pills pull-right">
       <li>FaceClone - Made by ASosnicki</li>
     </ul>
-  </footer>
+  </footer> -->
   <!-- ./footer -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
