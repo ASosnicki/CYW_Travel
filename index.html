@@ -1,91 +1,81 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/foundation.css"> -->
-  </head>
-  <body>
-    
-  <!-- 
-    <div class="callout large primary">
-      <div class="row column text-center">
-        <h1>CYW Travel</h1>
-        <h2 class="subheader"></h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FaceClone</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">FaceClone</a>
       </div>
     </div>
-     <! Start Top Bar -->
-    <div class="top-bar">
-       <div class="row column text-center">
-        <ul class="menu">
-          <li class="menu-text">Blog</li>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </div>
-    </div> 
-    <!-- End Top Bar -->
-    <!-- We can now combine rows and columns when there's only one column in that row -->
-    <div class="row medium-8 large-7 columns">
-      <div class="blog-post">
-        <h3> post title <small>03/27/2018</small></h3>
-        <img class="thumbnail" src="Pictures/heli.jpg">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Nomad</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
+  </nav>
+  <!-- ./nav -->
 
-      <div class="blog-post">
-        <h3> post title <small>03/27/2018</small></h3>
-        <img class="thumbnail" src="Pictures/bridge1.jpg">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Nomad</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- main -->
+  <main class="container">
+  <h1 class="text-center">Welcome to FaceClone! <br><small>A simple Facebook clone.</small></h1>
 
-      <div class="blog-post">
-        <h3> post title <small>03/27/2018</small></h3>
-        <img class="thumbnail" src="Pictures/bridge2.jpg">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Nomad</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Login to start enjoying unlimited fun!</h4>
 
-      <div class="blog-post">
-        <h3>post title <small>03/27/2018</small></h3>
-        <img class="thumbnail" src="brige3.jpg">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Nomad</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
+        <!-- login form -->
+        <form method="post" action="home.html">
+          <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-primary" type="submit" name="login" value="Login">
+          </div>
+        </form>
+        <!-- ./login form -->
+      </div>
+      <div class="col-md-6">
+        <h4>Don't have an account yet? Register!</h4>
+
+        <!-- register form -->
+        <form method="post" action="home.html">
+          <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="text" name="location" placeholder="Location">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-success" type="submit" name="register" value="Register">
+          </div>
+        </form>
+        <!-- ./register form -->
       </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+  </main>
+  <!-- ./main -->
+
+  <!-- footer -->
+  <footer class="container text-center">
+    <ul class="nav nav-pills pull-right">
+      <li>FaceClone - Made by Asosnicki</li>
+    </ul>
+  </footer>
+  <!-- ./footer -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
-
-
-    
